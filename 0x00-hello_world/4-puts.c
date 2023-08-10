@@ -1,5 +1,6 @@
 #include <stdio.h>
-int main(void) /* output text in stdout */
+/* comment */
+int main(void)
 {
 	char myst[] = "\"Programming is like building a multilingual puzzle";
 
