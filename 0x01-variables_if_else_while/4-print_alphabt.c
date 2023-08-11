@@ -2,7 +2,7 @@
 /**
  * main - print lowercase chars ignoring q and e
  *
- * return: o success
+ * Return: o success
  */
 int main(void)
 {
@@ -13,8 +13,8 @@ int main(void)
 		if (x == 'q' || x == 'e')
 			goto k;
 		putchar(x);
-k: x++;
+		k: x++;
    	}
 	putchar('\n');
-	return(0);
+	return (0);
 }
