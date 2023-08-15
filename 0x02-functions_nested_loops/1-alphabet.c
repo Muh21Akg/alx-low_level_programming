@@ -1,6 +1,7 @@
 /**
  * File: 1-alphabet.c
  * Auth: Muhammad A. Abdurrahaman
+ */
 #include "main.h"
 /**
  * print_alphabet: prints the alphabet followed by a new line
