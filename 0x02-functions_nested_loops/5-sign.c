@@ -5,7 +5,8 @@
 
 #include "main.h"
 
-/** print_sign - prints the sign of a number
+/**
+ * print_sign - prints the sign of a number
  * @n: the number to check
  * Return: 1 positive, 0 zero, -1, negative
  */
