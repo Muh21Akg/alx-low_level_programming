@@ -1,12 +1,8 @@
-/*
- * File: 101-natural.c
- * Auth: Muhammad A Abdurrahman
- */
 #include <stdio.h>
- /**
-  * main - prints the sum of all the multiples of 3 or 5 less than.
-  * Return: 0 success
-  */
+/**
+ * main - print sum of multiples of three and five.
+ * Return: Nothing.
+*/
 int main(void)
 {
 	int i, sum;
