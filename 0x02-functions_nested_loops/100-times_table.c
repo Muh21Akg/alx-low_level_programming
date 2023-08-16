@@ -2,7 +2,6 @@
  * File: 9-times_table.c
  * Auth: Muhammad A Abdurrahman
  */
-#include <stdio.h>
 #include "main.h"
 
 /**
