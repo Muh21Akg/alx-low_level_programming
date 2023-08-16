@@ -4,8 +4,7 @@
  */
 #include <stdio.h>
  /**
-  * main - entry point
-  * prints the sum of all the multiples of 3 or 5 less than 1024
+  * main - prints the sum of all the multiples of 3 or 5 less than 1024.
   * Return: 0 success
   */
 int main(void)
