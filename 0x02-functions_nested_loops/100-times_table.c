@@ -9,9 +9,9 @@
  */
 void print_times_table(int n)
 {
-	int num, mult, prod;
+	int n, mult, prod;
 
-	for (num = 0; num <= 9; num++)
+	for (n = 0; n <= 9; n++)
 	{
 		_putchar('0');
 		for (mult = 1; mult <= 9; mult++)
