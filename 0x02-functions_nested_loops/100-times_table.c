@@ -7,7 +7,7 @@
 /**
  * times_table - prints 9 times table
  */
-void times_table(void)
+void print_times_table(int n);
 {
 	int num, mult, prod;
 
