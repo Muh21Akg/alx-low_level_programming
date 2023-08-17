@@ -1,7 +1,7 @@
-/*
- * File: 7-print_diagonal.c
- * Auth: Muhammad A Abdurrahman
- */
+i/*
+  * File: 7-print_diagonal.c
+  * Auth: Muhammad A Abdurrahman
+  */
 
 #include "main.h"
 
@@ -11,20 +11,19 @@
  */
 void print_diagonal(int n)
 {
-	int i;
-
-	if (i > 0)
+	int l, s;
+	
+	if (n > 0)
 	{
-		for (i = 0; i < n; i++)
+		for (l = 0; l < n; l++)
 		{
-			for (j = 0; j < i; j++)
-			{
-				_puchar(' ');
-			}
-			_putchar('\\');
-			if (i == (n - 1)
-				continue;
+			for (s = 0; s < l; s++)
+				_putchar(' ');
 
+			_putchar('\\');
+
+			if (l == (n - 1))
+				continue;
 			_putchar('\n');
 		}
 	}
