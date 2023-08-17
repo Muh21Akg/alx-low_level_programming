@@ -3,7 +3,7 @@
  * Auth: Muhammad A Abdurrahman
  */
 
-#imclude "main.h"
+#include "main.h"
 
 /**
  * more_numbers - prints (0 through 14) ten times
