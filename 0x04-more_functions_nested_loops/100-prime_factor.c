@@ -17,7 +17,7 @@ int main(void)
 
 	while (i++ < x / 2)
 	{
-		if ( x % i == 0)
+		if (x % i == 0)
 		{
 			x /= 2;
 			continue;
