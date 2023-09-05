@@ -29,6 +29,5 @@ char *str_concat(char *s1, char *s2)
 	{
 		con[size1 + i] = s2[i];
 	}
-	free(con);
 	return (con);
 }
