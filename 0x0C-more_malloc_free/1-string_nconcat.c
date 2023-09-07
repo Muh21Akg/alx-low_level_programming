@@ -9,31 +9,32 @@
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	unsigned int i, j, k, l;
-	char *constr;
+	char *concat;
+	unsigned int len = n, index;
 
-	for (i = 0; s1[i] != '\0'; i++)
-		;
-	for (j = 0; s2[j] != '\0'; j++)
-		;
 	if (s1 == NULL)
-		s1 = " ";
+		s1 = "";
+
 	if (s2 == NULL)
-		s2 = " ";
-	if (n < j)
-		j = n;
-	constr = malloc(sizeof(char *) * (i + 1));
-	if (constr == NULL)
+		s2 = "";
+
+	for (index = 0; s1[index]; index++)
+		len++;
+
+	concat = malloc(sizeof(char) * (len + 1));
+
+	if (concat == NULL)
 		return (NULL);
-	l = 0;
-	for (k = 0; k <= i; k++)
-	{
-		constr[l++] = s1[k];
-	}
-	for (k = 0; k <= j; k++)
-	{
-		constr[l++] = s2[k];
-	}
-	constr[l] = '\0';
-	return (constr);
+
+	len = 0;
+
+	for (index = 0; s1[index]; index++)
+		concat[len++] = s1[index];
+
+	for (index = 0; s2[index] && index < n; index++)
+		concat[len++] = s2[index];
+
+	concat[len] = '\0';
+
+	return (concat);
 }
