@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * *array_range
+ * *array_range - arranges a memory buffer
  * @min: smallest number
  * @max: largest number
  * Return: pointer to array
@@ -17,7 +17,7 @@ int *array_range(int min, int max)
 	x = max - min;
 	arr = malloc(sizeof(int) * (x + 1));
 	if (arr == NULL)
-		return(NULL);
+		return (NULL);
 	for (i = min; i <= max; i++)
 	{
 		arr[j++] = i;
