@@ -9,7 +9,7 @@
  */
 int main(int argc, char *argv[])
 {
-	int i, sum = 0;
+	int sum = 0;
 	int rema;
 
 	if (argc != 2)
@@ -26,15 +26,25 @@ int main(int argc, char *argv[])
 		}
 		rema = atoi(argv[1]);
 		for (; rema >= 25; rema -= 25)
+		{
 			sum++;
+		}
 		for (; rema >= 10; rema -= 10)
+		{
 			sum++;
+		}
 		for (; rema >= 5; rema -= 5)
+		{
 			sum++;
+		}
 		for (; rema >= 2; rema -= 2)
+		{
 			sum++;
+		}
 		for (; rema >= 1; rema -= 1)
+		{
 			sum++;
+		}
 		printf("%d\n", sum);
 		return (0);
 	}
