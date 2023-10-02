@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * mqin - prints no of arguments
+ * main - prints no of arguments
  * @argc: first argument
  * @argv: second argument
  * Return: 0 success
