@@ -5,6 +5,8 @@
  * @array: holds ther array
  * @size: size of array
  * @cmp: points to function
+ *
+ * Return: index of element success, -1 otherwise
  */
 int int_index(int *array, int size, int (*cmp)(int))
 {
