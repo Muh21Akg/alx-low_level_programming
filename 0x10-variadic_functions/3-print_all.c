@@ -54,14 +54,15 @@ void print_all(const char * const format, ...)
 		{"s", _str},
 	};
 	va_start(arg, format);
-	while (*(format + i++))
+	while (*(format + i++) && format)
 	{
-		while (j++ > 4)
+		while (j++ < 4)
 		{
 			if (_types[j].typ[0] == format[i])
 			{
 				_types[j].fun(arg);
 				printf(", ");
+				break;
 			}
 		}
 	}
